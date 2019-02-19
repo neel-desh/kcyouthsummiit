@@ -28,6 +28,86 @@
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">
 			<link rel="stylesheet" href="css/main.css">
+			<!-- custom css modal -->
+			<style>
+				body {font-family: Arial, Helvetica, sans-serif;}
+				
+				/* The Modal (background) */
+				.modal {
+				  display: none; /* Hidden by default */
+				  position: fixed; /* Stay in place */
+				  z-index: 1; /* Sit on top */
+				  padding-top: 100px; /* Location of the box */
+				  left: 0;
+				  top: 0;
+				  width: 100%; /* Full width */
+					height: 100%; /* Full height */
+					padding-left: 12.5%;
+					padding-right: 12.5%;
+				  overflow: auto; /* Enable scroll if needed */
+				  background-color: rgb(0,0,0); /* Fallback color */
+				  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+				}
+				
+				/* Modal Content */
+				.modal-content {
+				  position: relative;
+				  background-color: #fefefe;
+				  margin: auto;
+				  padding: 0;
+				  border: 1px solid #888;
+				  width: 80%;
+				  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+				  -webkit-animation-name: animatetop;
+				  -webkit-animation-duration: 0.4s;
+				  animation-name: animatetop;
+				  animation-duration: 0.4s
+				}
+
+			 a.custom404:link,
+			 a.custom404:visited, 
+			 a.custom404:active, 
+			 a.custom404:hover{
+				text-align: center;
+				text-decoration: none;
+				color: #777777;
+}
+				
+				/* Add Animation */
+				@-webkit-keyframes animatetop {
+				  from {top:-300px; opacity:0} 
+				  to {top:0; opacity:1}
+				}
+				
+				@keyframes animatetop {
+				  from {top:-300px; opacity:0}
+				  to {top:0; opacity:1}
+				}
+				
+				/* The Close Button */
+				.close, .close1, .close2, .close3 {
+				  color: white;
+				  float: left;
+				  font-size: 28px;
+				  font-weight: bold;
+				}
+				
+				.close:hover,.close1:hover,.close2:hover,.close3:hover,
+				.close:focus, .close1:focus,.close2:focus,.close3:focus {
+				  color: #000;
+				  text-decoration: none;
+				  cursor: pointer;
+				}
+				
+				.modal-header {
+				  padding: 2px 16px;
+				  background-color: #777777;
+				  color: white;
+				}
+				
+				.modal-body {padding: 2px 16px;}
+				
+				</style>
 		</head>
 		<body>
 
@@ -40,7 +120,7 @@
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="#home">Home</a></li>
-				          
+				          <li> <a href="#intro">introduction</a></li>
 				          <li><a href="#speakers">Speakers</a></li>
 						  <li><a href="#schedule">Schedule</a></li>
 						  <li><a href="#videos">Our Team</a></li>
@@ -77,7 +157,7 @@
 			<!-- End banner Area -->				
 	
 			<!-- Start home-video Area -->
-			<section class="home-video-area">
+			<section class="home-video-area" id="intro">
 				<div class="container-fluid">
 					<div class="row justify-content-end align-items-center">
 							<section class="video-area col-lg-6 no-padding">
@@ -128,11 +208,10 @@
 					<div class="container">
 						<div class="row justify-content-center">
 							<div class="col-lg-10">
-								<h1 class="text-white">Huge Transaction in last Week</h1>
+								<h1 class="text-white">About K.C College</h1>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-								</p>
-								<a class="callaction-btn" href="#">Become a Member</a>							
+										Kishinchand Chellaram College is one of the premier institutions affiliated to the University of Mumbai and recognized by Government of Maharashtra. It was established in 1954 by the Hyderabad (Sind) National Collegiate Board. Over the years K.C. has established itself as one of the leading colleges in Mumbai. This fact is well supported by excellent results, both at HSC as well as at the University examinations and the number of laurels won by the students. The Motto of the College is ‘SALVATION THROUGH KNOWLEDGE’. This motto was selected from ancient Sanskrit scriptures. ‘Knowledge’ in the highest sense means acquiring wisdom & understanding, which in turn leads man to” Moksha” or Salvation. K.C. prides itself in motivating students to achieve excellence not only in academic fields but also in co-curricular and extracurricular activities.								</p>
+														
 							</div>
 						</div>
 					</div>	
@@ -205,13 +284,37 @@
 								</div>								
 							</div>
 							<div class="single-speaker item">
+									<div class="container">
+										<div class="row align-items-center">
+											<div class="col-md-6 speaker-img no-padding">
+												<img src="img/s1.jpg" alt="">
+											</div>
+											<div class="col-md-6 speaker-info no-padding">
+												<h6 class="text-uppercase">speaker 02</h6>
+												<h1 class="text-white">Essie Ballard</h1>
+												<p>
+													Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances.
+												</p>
+												<p><span class="lnr lnr-phone-handset"></span>+880 (012) 8954 253</p>
+												<p><span class="lnr lnr-location"></span>iamspeaker@gmail.com</p>
+												<ul>
+													<a href="#"><i class="fa fa-facebook"></i></a>
+													<a href="#"><i class="fa fa-twitter"></i></a>
+													<a href="#"><i class="fa fa-dribbble"></i></a>
+													<a href="#"><i class="fa fa-behance"></i></a>
+												</ul>
+											</div>
+										</div>
+									</div>								
+								</div>
+							<div class="single-speaker item">
 								<div class="container">
 									<div class="row align-items-center">
 										<div class="col-md-6 speaker-img no-padding">
 											<img src="img/s2.jpg" alt="">
 										</div>
 										<div class="col-md-6 speaker-info no-padding">
-											<h6 class="text-uppercase">speaker 02</h6>
+											<h6 class="text-uppercase">speaker 03</h6>
 											<h1 class="text-white">Elizabeth Stokes</h1>
 											<p>
 												Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances.
@@ -235,7 +338,7 @@
 											<img src="img/s1.jpg" alt="">
 										</div>
 										<div class="col-md-6 speaker-info no-padding">
-											<h6 class="text-uppercase">speaker 01</h6>
+											<h6 class="text-uppercase">speaker 04</h6>
 											<h1 class="text-white">Essie Ballard</h1>
 											<p>
 												Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances.
@@ -259,7 +362,7 @@
 											<img src="img/s2.jpg" alt="">
 										</div>
 										<div class="col-md-6 speaker-info no-padding">
-											<h6 class="text-uppercase">speaker 02</h6>
+											<h6 class="text-uppercase">speaker 05</h6>
 											<h1 class="text-white">Elizabeth Stokes</h1>
 											<p>
 												Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances.
@@ -289,8 +392,8 @@
 					<div class="row d-flex justify-content-center">
 						<div class="menu-content pb-70 col-lg-8">
 							<div class="title text-center">
-								<h1 class="mb-10">How Our Customers Treat Us</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
+								<h1 class="mb-10">Session Timings</h1>
+								<p>a lovely quote maybe.</p>
 							</div>
 						</div>
 					</div>						
@@ -299,62 +402,46 @@
 							<table class="schdule-table table table-bordered">
 								  <thead class="thead-light">
 								    <tr>
-								      <th class="head" scope="col">sl</th>
+								      <th class="head" scope="col">Sr</th>
 								      <th class="head" scope="col">session</th>
 								      <th class="head" scope="col">speaker</th>
-								      <th class="head" scope="col">vanue</th>
-								      <th class="head" scope="col">time</th>
+								      <th class="head" scope="col">venue</th>
+								      <th class="head" scope="col">time [Duration]</th>
 								    </tr>
 								  </thead>
 								  <tbody>
 								    <tr>
 								      <th class="name" scope="row">01</th>
-								      <td>Session 1</td>				      
+								      <td> 
+											<a href="#schedule"  class="custom404" id="myBtn">Session 1 <i class="fa fa-info-circle" aria-hidden="true" title="Know more about talks"></i>
+											</a></td>				      
 								      <td>Isabelle Cooper</td>				      
 								      <td>3rd Hall Room</td>				      
-								      <td>02.00</td>					      
+								      <td>02.00 [60mins]</td>					      
 								    </tr>
 								    <tr>
 								      <th class="name" scope="row">02</th>
-								      <td>Session 2</td>				      
+								      <td><a href="#schedule" class="custom404" id="myBtn1">Session 2 <i class="fa fa-info-circle" aria-hidden="true" title="Know more about talks"></i>
+									  </a></td>				      
 								      <td>N/A</td>				      
 								      <td>4th Hall Room</td>				      
-								      <td>02.00</td>						      
+								      <td>02.00 [60mins]</td>						      
 								    </tr>
 								    <tr>
 								      <th class="name" scope="row">03</th>
-								      <td>Session 3</td>				      
+								      <td>										<a href="#schedule" class="custom404" id="myBtn2">Session 3 <i class="fa fa-info-circle" aria-hidden="true" title="Know more about talks"></i>
+											</a></td>				      
 								      <td>Jane Daniel</td>				      
 								      <td>2nd Hall Room</td>				      
-								      <td>02.00</td>						      
+								      <td>02.00 [60mins]</td>						      
 								    </tr>
 								    <tr>
 								      <th class="name" scope="row">04</th>
-								      <td>Session 4</td>				      
+								      <td>											<a href="#schedule" class="custom404" id="myBtn3">Session 4 <i class="fa fa-info-circle" aria-hidden="true" title="Know more about talks"></i>
+									  </a></td>				      
 								      <td>Billy Barton</td>				      
 								      <td>1st Hall Room</td>				      
-								      <td>02.00</td>						      
-								    </tr>
-								    <tr>
-								      <th class="name" scope="row">05</th>
-								      <td>Sppech for young people</td>				      
-								      <td>Flora Gonzales</td>				      
-								      <td>4rd Hall Room</td>				      
-								      <td>02.00</td>					      
-								    </tr>
-								    <tr>
-								      <th class="name" scope="row">06</th>
-								      <td>Lunch Break</td>				      
-								      <td>N/A</td>				      
-								      <td>3rd Hall Room</td>				      
-								      <td>02.00</td>					      
-								    </tr>
-								    <tr>
-								      <th class="name" scope="row">07</th>
-								      <td>Sppech for Middle aged people</td>				 
-								      <td>Francisco Barrett</td>				      
-								      <td>1st Hall Room</td>				      
-								      <td>02.00</td>					      
+								      <td>02.00 [60mins]</td>						      
 								    </tr>											    
 								  </tbody>
 							</table>							
@@ -438,6 +525,90 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				</div>
 			</footer>	
 			<!-- End footer Area -->	
+			<!-- modal trigger code -->
+			
+<div id="myModal" class="modal">
+	<!-- Modal content -->
+	<div class="modal-content">
+	  <div class="modal-header">	
+		<h2>Session 1</h2>
+		<span class="close">&times;</span>
+	  </div>
+	  <div class="modal-body">
+				<h3>Proposed topics :-</h3>
+		<p>1.Relevance of reservation after 72 years of independence?</br>
+				2.Relations with Neighbouring Countries.</br>
+				3.Lack of Political Awareness in Urban Youth.</br>
+				4.When Glasnost and Perestroika in Indian Argiculture?</br>
+				5.Urban VS Rural (Formation of Rurban Economy, Challenges to bridge both the contrasting populations)</p>
+		
+	  </div>
+	</div>
+	</div>
+	<!-- session 2 modal content -->
+	<div id="myModal1" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<div class="modal-header">	
+				<h2>Session 2</h2>
+				<span class="close1">&times;</span>
+				</div>
+				<div class="modal-body">
+					<h3>Proposed topics :-</h3>
+				<p>1.Is world turning inward, threat to globalization economy?. <br>
+						2.China the next super power and relationship with india.<br>
+						3.Modinomics vs Economics. <br>
+						4.Growth Story of Indian Economy Intact ( with regards to Agrarian economy, Capital
+						Sector Economy, Secondary Economy and Tertiary Economy and International
+						Trade) . <br>
+						5.Deplenishing status of NBFCs ( government intervention, and regulators Interference). <br>
+						6.6th largest economy ( growth of employment, unemployed population ,gdp vs the real
+						gdp , purchasing power parity , government jobs, Public companies, Privatisation ). <br>
+						7.Question on the Autonomy of institutions ( RBI, CBI, NITI AAYOG , COURTS, EC).<br>
+						8.Contribution of unorganised sector in India ( the importance of unskilled and
+						unregulated sector in India and policies undertaken by government to recognise their.
+						importance as they contribute majorly in Indian Economy )</p>
+				
+				</div>
+			</div>
+			</div>
+			<!-- session 3 modal content -->
+			<div id="myModal2" class="modal">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<div class="modal-header">	
+						<h2>Session 3</h2>
+						<span class="close2">&times;</span>
+						</div>
+						<div class="modal-body">
+								<h3>Proposed topics :-</h3>
+						<p>1.Motivational. <br>
+								2.Spirituality. <br>
+								3.Sports. <br>
+								4.Youth Empowerment.</p>
+						
+						</div>
+					</div>
+					</div>
+			<!-- session 4 modal content -->
+			<div id="myModal3" class="modal">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<div class="modal-header">	
+						<h2>Session 4</h2>
+						<span class="close3">&times;</span>
+						</div>
+						<div class="modal-body">
+								<h3>Proposed topics :-</h3>
+						<p> 1.Policies Vs Power - A dilemma. <br>
+								2. Brain Drain. <br>
+								3. Futuristic India. <br>
+								4. Post Truth World.</p>
+						
+						</div>
+					</div>
+					</div>
+		
 
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -453,7 +624,65 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			<script src="js/jquery.nice-select.min.js"></script>			
 			<script src="js/parallax.min.js"></script>		
 			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
+			<script src="js/main.js"></script>
+				<!--custom modal javascript  -->
+				<script>
+					
+					// Get the modal
+					var modal = document.getElementById('myModal');
+					var modal1 = document.getElementById('myModal1');
+					var modal2 = document.getElementById('myModal2');
+					var modal3 = document.getElementById('myModal3');
+
+					
+					// Get the button that opens the modal
+					var btn = document.getElementById("myBtn");
+					// Get the button that opens the modal
+					var btn1 = document.getElementById("myBtn1");
+					// Get the button that opens the modal
+					var btn2 = document.getElementById("myBtn2");
+					// Get the button that opens the modal
+					var btn3 = document.getElementById("myBtn3");
+					
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+					var span1 = document.getElementsByClassName("close1")[0];
+					var span2 = document.getElementsByClassName("close2")[0];
+					var span3 = document.getElementsByClassName("close3")[0];
+
+
+					
+					// When the user clicks the button, open the modal 
+					btn.onclick = function() {
+					  modal.style.display = "block";
+					}
+					btn1.onclick = function() {
+					  modal1.style.display = "block";
+					}	
+					btn2.onclick = function() {
+					  modal2.style.display = "block";
+					}	
+					btn3.onclick = function() {
+					  modal3.style.display = "block";
+					}
+					
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() {
+					  modal.style.display = "none";
+					}
+					span1.onclick = function() {
+					  modal1.style.display = "none";
+					}	
+					span2.onclick = function() {
+					  modal2.style.display = "none";
+					}	
+					span3.onclick = function() {
+					  modal3.style.display = "none";
+					}
+					
+
+					
+					</script>
 		</body>
 	</html>
 
